@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            .nav{
+                display:flex;
+                justify-content:space-between;
+                color:blue;
+                padding:10px;
+            }
+            .header{
+                background-image: url("https://media.istockphoto.com/id/176565702/photo/lightbulb-moment.jpg?s=612x612&w=0&k=20&c=3kU308qh_S40Eszxsg5XIbf42QWBFhBCvFA7VSzSrO8=");
+                background-size:cover;
+                background-repeat:no-repeat;
+                height:400px;
+            }
+            .container{
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr;
+                background-color:lightpink;
+                padding:10px;
+            }
+            .item img{
+                width:150px;
+                height:150px;
+            }
+            #p{
+                background-color:lightblue;
+                text-align:center;
+                padding:10px;
+            }
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            .item{
+                text-align:center;
+            }
+            footer{
+                background-color:ligthpurple;
+                text-align:center;
+                padding:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+        <div class="nav">
+            <h3>
+                Home
+            </h3>
+            <h3>
+                General knownledge
+            </h3>
+            <h3>
+                Math
+            </h3>
+            <h3>
+                Science
+            </h3>
+            <h3>
+                Question Bank
+            </h3>
+        </div>
+        </div>
+        <div id="main">
+            <h2 id="p">
+
+            </h2>
+            <div class="container">
+                <div class="item">
+                    <img src="https://questioncloud.in/uploads/examcat/file-1644580359195.png" alt="General knowledge">
+                    <p>
+                        Knowledge is understanding and awareness of something. It refers to the information, facts, skills, and wisdom acquired through learning and experiences in life. Knowledge is a very wide concept and has no end.
+                    </p>
+                    <button>
+                        Start GK Quiz
+                    </button>
+                </div>
+                <div class="item">
+                    <img src="https://mathematicsart.com/wp-content/uploads/2022/11/qzwlp.png" alt="Math Quiz">
+                    <p>
+                        Math quizzes encourage students to think critically and enhance their problem-solving skills. Quizzes often present students with challenging problems that require them to analyze the given information, identify relevant strategies.
+                    </p>
+                    <button>
+                        Start Math Quiz
+                    </button>
+                </div>
+                <div class="item">
+                    <img src="https://media.baamboozle.com/uploads/images/206925/1627964599_25744.webp" alt="Science Quiz">
+                    <p>
+                        Science quiz aims to inculcate in the mind of young students a spirit of scientific enquiry, analytical thinking and provides a platform to the budding scientists for exchanging thoughts.
+                    </p>
+                    <button>
+                        Start Science Quiz
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>
+                follow us on
+            </p>
+            <i class='bx bxl-facebook-square'></i>
+            <i class='bx bxl-instagram-alt' ></i>
+            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-youtube' ></i>
+            <p>
+                Create by Saipriya
+            </p>
+            <p>
+                copyright by Tech Learner pvt limited
+            </p>
+        </footer>
+        <script>
+            var name=prompt("register your name for the quiz");
+            document.getElementById("p").innerHTML="Hello "+name+", Welcome to the Tech Leaner, your name is now registered"
+        </script>
+    </body>
+</html>
