@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <style>
+            .nav{
+                display:flex;
+                justify-content:space-between;
+                color:blue;
+                padding:10px;
+            }
+            .header{
+                background-image: url("https://media.istockphoto.com/id/176565702/photo/lightbulb-moment.jpg?s=612x612&w=0&k=20&c=3kU308qh_S40Eszxsg5XIbf42QWBFhBCvFA7VSzSrO8=");
+                background-size:cover;
+                background-repeat:no-repeat;
+                height:400px;
+            }
+            .container{
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr;
+                background-color:lightpink;
+                padding:10px;
+            }
+            .item img{
+                width:150px;
+                height:150px;
+            }
+            #p{
+                background-color:lightblue;
+                text-align:center;
+                padding:10px;
+            }
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            .item{
+                text-align:center;
+            }
+            form{
+                background-color:white;
+                width:400px;
+                margin:auto auto;
+                margin-top:10px;
+                padding:10px;
+                border-radius:10px;
+            }
+            #main{
+                background-color:lightblue;
+                padding:10px;
+            }
+            input{
+                width:100%;
+            }
+            button{
+                width:100%;
+                background-color:green;
+                color:white;
+                padding:10px;
+                border-radius:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+        <div class="nav">
+            <h3>
+                Home
+            </h3>
+            <h3>
+                General knownledge
+            </h3>
+            <h3>
+                Math
+            </h3>
+            <h3>
+                Science
+            </h3>
+            <h3>
+                Question Bank
+            </h3>
+        </div>
+        </div>
+        <div id="main">
+            <ol>
+            <li>
+                <a href="https://www.sawaal.com/general-knowledge-questions-and-answers.html">
+                General Knowledge Question Bank
+                </a>
+            </li>
+
+            <li>
+            <a href="https://www.sawaal.com/searchresults?query=math">
+                Math Question Bank
+            </a>
+            </li>
+
+            <li>
+                <a href="https://www.sawaal.com/searchresults?query=science">
+                    Science Question Bank
+                </a>
+            </li>
+            </ol>
+            <form>
+                <h2>
+                    <center>
+                        Contact Us
+                    </center>
+                </h2><br><br>
+
+                <label>
+                    <center>
+                    Name:
+                    </center>
+                </label><br>
+
+                <center><input id="input" type="text"></center><br>
+
+                <label>
+                    <center>
+                        Email:
+                    </center>
+                </label><br>
+
+                <center><input type="email"></center><br>
+
+                <label>
+                    <center>
+                        Your Query
+                    </center>
+                </label><br>
+
+                <center>
+                    <input type="text">
+                </center><br>
+
+                <button>
+                    Submit
+                </button>
+
+            </form>
+        </div>
+    </body>
+</html>
