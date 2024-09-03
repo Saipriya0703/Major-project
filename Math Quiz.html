@@ -1,0 +1,301 @@
+<html>
+    <head>
+        <style>
+            .nav{
+                display:flex;
+                justify-content:space-between;
+                color:blue;
+                padding:10px;
+            }
+            .header{
+                background-image: url("https://media.istockphoto.com/id/176565702/photo/lightbulb-moment.jpg?s=612x612&w=0&k=20&c=3kU308qh_S40Eszxsg5XIbf42QWBFhBCvFA7VSzSrO8=");
+                background-size:cover;
+                background-repeat:no-repeat;
+                height:400px;
+            }
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            #main{
+                background-color:pink;
+                padding:10px;
+                text-align:center;
+            }
+            #main button{
+                color:white;
+                background-color:black;
+                padding:5px;
+                border-radius:5px;
+            }
+            #main button.correct {
+
+            background-color: green !important;
+
+            color: white;
+
+        }
+
+        #main button.wrong {
+
+            background-color: red !important;
+
+            color: white;
+
+        }
+
+        #main button.disabled {
+
+            cursor: not-allowed;
+
+        }
+        .score {
+
+            margin-top: 20px;
+
+            font-size: 20px;
+
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+        <div class="nav">
+            <h3>
+                Home
+            </h3>
+            <h3>
+                General knownledge
+            </h3>
+            <h3>
+                Math
+            </h3>
+            <h3>
+                Science
+            </h3>
+            <h3>
+                Question Bank
+            </h3>
+        </div>
+        </div>
+        <div id="main">
+            <div>
+                <h2>
+                    1. what is the sum of 130+125+191?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    A.335
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    B.456
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    C.768
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    D.426
+                </button>
+                <br><br>
+
+                <h2>
+                    2. If we minus 712 from 1500, how much do we get?
+                </h2>
+                <button onclick="checkAnswer(this,true)">
+                    A.788
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    B.778
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    C.768
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    D.758
+                </button>
+                </p>
+                <br><br>
+
+                <h2>
+                    3. 50 times of 8 is equal to?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    A.80
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    B.400
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    C.800
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    D.4000
+                </button>
+                <br><br>
+
+                <h2>
+                    4. 110 divided by 10 is?
+                </h2>
+                <button onclick="checkAsnwer(this,true)">
+                    A.11
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    B.10
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    C.5
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    D. None of these
+                </button>
+                <br><br>
+
+                <h2>
+                    5. 20+(90÷2) is equal to?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    A.50
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    B.55
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    C.65
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    D.60
+                </button>
+                <br><br>
+
+                <h2> 
+                    6.The product of 85 and 5 is?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    A.400
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    B.410
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    C.420
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    D.None of these
+                </button>
+                <br><br>
+
+                <h2> 
+                    7. Find the missing terms in multiple of 3: 3, 6, 9, __, 15
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    A.10
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    B.11
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    C.12
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    D.13
+                </button>
+                <br><br>
+
+                <h2> 
+                    8. Solve 24÷8+2.
+                </h2>
+                <button onclick="checkAnswer(this,true)">
+                    A.5
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    B.6
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    C.8
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    D.12
+                </button>
+                <br><br>
+
+                <h2>
+                    9. Solve: 300 – (150×2)
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    A.150
+                </button>
+                <button onclick="checkANswer(this,false)">
+                    B.100
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    C.50
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    D.0
+                </button>
+                <br><br>
+
+                <h2> 
+                    10. The product of 121 x 0 x 200 x 25 is
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    A.1500
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    B.0
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    C.9
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    D.11
+                </button>
+                <br><br>
+                <div class="score" id="score"></div>
+            </div>
+        </div>
+        <script>
+            let score = 0;
+
+        let totalQuestions = 10;
+
+ 
+
+        function checkAnswer(button, isCorrect) {
+
+            if (isCorrect) {
+
+                button.classList.add('correct');
+
+                score++;
+
+            } else {
+
+                button.classList.add('wrong');
+
+            }
+
+ 
+
+            // Disable all buttons for the current question
+
+            let buttons = button.parentElement.querySelectorAll('button');
+
+            
+
+ 
+
+            updateScore();
+
+        }
+
+ 
+
+        function updateScore() {
+
+            document.getElementById('score').innerText = `Score: ${score}/${totalQuestions}`;
+
+        }
+        </script>
+    </body>
+</html>
