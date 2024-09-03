@@ -1,0 +1,273 @@
+<html>
+
+<head>
+
+    <style>
+
+        .nav {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            color: blue;
+
+            padding: 10px;
+
+        }
+
+        .header {
+
+            background-image: url("https://media.istockphoto.com/id/176565702/photo/lightbulb-moment.jpg?s=612x612&w=0&k=20&c=3kU308qh_S40Eszxsg5XIbf42QWBFhBCvFA7VSzSrO8=");
+
+            background-size: cover;
+
+            background-repeat: no-repeat;
+
+            height: 400px;
+
+        }
+
+        * {
+
+            margin: 0px;
+
+            padding: 0px;
+
+        }#main {
+
+            background-color: pink;
+
+            padding: 10px;
+
+            text-align: center;
+
+        }
+
+        #main button {
+
+            color: white;
+
+            background-color: black;
+
+            padding: 5px;
+
+            border-radius: 5px;
+
+            border: none;
+
+            cursor: pointer;
+
+            margin: 5px;
+
+        }
+
+        #main button.correct {
+
+            background-color: green !important;
+
+            color: white;
+
+        }
+
+        #main button.wrong {
+
+            background-color: red !important;
+
+            color: white;
+
+        }
+
+        #main button.disabled {
+
+            cursor: not-allowed;
+
+        }
+
+        .score {
+
+            margin-top: 20px;
+
+            font-size: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="nav">
+
+            <h3>Home</h3>
+
+            <h3>General Knowledge</h3>
+
+            <h3>Math</h3>
+
+            <h3>Science</h3>
+
+            <h3>Question Bank</h3>
+
+        </div>
+
+    </div>
+
+    <div id="main">
+
+        <div>
+
+            <h2>Which Country has the highest life expectancy?</h2>
+
+            <button onclick="checkAnswer(this, false)">Japan</button>
+
+            <button onclick="checkAnswer(this, true)">China</button>
+
+            <br><br>
+
+ 
+
+            <h2>Where would you be if you were standing on the Spanish Steps?</h2>
+
+            <button onclick="checkAnswer(this, true)">Rome</button>
+
+            <button onclick="checkAnswer(this, false)">Italy</button>
+
+            <br><br>
+
+ 
+
+            <h2>Which language has more native speakers?</h2>
+
+            <button onclick="checkAnswer(this, false)">English</button>
+
+            <button onclick="checkAnswer(this, true)">Spanish</button>
+
+            <br><br>
+
+            <h2>What is the most common surname in the United States?</h2>
+
+            <button onclick="checkAnswer(this, true)">Smith</button>
+
+            <button onclick="checkAnswer(this, false)">Donaldson</button>
+
+            <br><br>
+
+ 
+
+            <h2>Which artist has the most streams on Spotify?</h2>
+
+            <button onclick="checkAnswer(this, false)">Drake</button>
+
+            <button onclick="checkAnswer(this, true)">Krile</button>
+
+            <br><br>
+
+ 
+
+            <h2>What disease commonly spreads on pirate ships?</h2>
+
+            <button onclick="checkAnswer(this, false)">Malaria</button>
+
+            <button onclick="checkAnswer(this, true)">Scurvy</button>
+
+            <br><br>
+
+ 
+
+            <h2>Who is the ancient Greek God of the Sun?</h2>
+
+            <button onclick="checkAnswer(this, true)">Apollo</button>
+
+            <button onclick="checkAnswer(this, false)">Selene</button>
+
+            <br><br>
+
+            <h2>What was the name of the crime boss who was head of the feared Chicago outfit?</h2>
+
+            <button onclick="checkAnswer(this, false)">John Robinson</button>
+
+            <button onclick="checkAnswer(this, true)">Al Capone</button>
+
+            <br><br>
+
+ 
+
+            <h2>What year was the United Nations established?</h2>
+
+            <button onclick="checkAnswer(this, true)">1945</button>
+
+            <button onclick="checkAnswer(this, false)">1925</button>
+
+            <br><br>
+
+ 
+
+            <h2>Who has won the most total Academy Awards?</h2>
+
+            <button onclick="checkAnswer(this, true)">Walt Disney</button>
+
+            <button onclick="checkAnswer(this, false)">Jack Nicholson</button>
+
+            <br><br>
+
+ 
+
+            <div class="score" id="score"></div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        let score = 0;
+
+        let totalQuestions = 10;
+
+ 
+
+        function checkAnswer(button, isCorrect) {
+
+            if (isCorrect) {
+
+                button.classList.add('correct');
+
+                score++;
+
+            } else {
+
+                button.classList.add('wrong');
+
+            }
+
+ 
+
+            // Disable all buttons for the current question
+
+            let buttons = button.parentElement.querySelectorAll('button');
+
+            
+
+ 
+
+            updateScore();
+
+        }
+
+ 
+
+        function updateScore() {
+
+            document.getElementById('score').innerText = `Score: ${score}/${totalQuestions}`;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
