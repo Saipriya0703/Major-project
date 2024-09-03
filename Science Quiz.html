@@ -1,0 +1,300 @@
+<html>
+    <head>
+        <style>
+            .nav{
+                display:flex;
+                justify-content:space-between;
+                color:blue;
+                padding:10px;
+            }
+            .header{
+                background-image: url("https://media.istockphoto.com/id/176565702/photo/lightbulb-moment.jpg?s=612x612&w=0&k=20&c=3kU308qh_S40Eszxsg5XIbf42QWBFhBCvFA7VSzSrO8=");
+                background-size:cover;
+                background-repeat:no-repeat;
+                height:400px;
+            }
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            #main{
+                background-color:orange;
+                padding:10px;
+                text-align:center;
+            }
+            #main button{
+                color:black;
+                background-color:white;
+                padding:5px;
+                border-radius:5px;
+            }
+            #main button.correct {
+
+            background-color: green !important;
+
+            color: white;
+
+        }
+
+        #main button.wrong {
+
+            background-color: red !important;
+
+            color: white;
+
+        }
+
+        #main button.disabled {
+
+            cursor: not-allowed;
+
+        }
+        .score {
+
+            margin-top: 20px;
+
+            font-size: 20px;
+
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+        <div class="nav">
+            <h3>
+                Home
+            </h3>
+            <h3>
+                General knownledge
+            </h3>
+            <h3>
+                Math
+            </h3>
+            <h3>
+                Science
+            </h3>
+            <h3>
+                Question Bank
+            </h3>
+        </div>
+        </div>
+        <div id="main">
+            <div>
+                <h2>
+                    What part of the plant makes food?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    1. root
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    2. Stem
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    3. Leaf
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    4. Flower
+                </button>
+                <br><br>
+
+                <h2>
+                    Which planet is known as the Red Planet?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    1. Earth
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    2. Mars
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    3. Jupiter
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    4. Venus
+                </button>
+                </p>
+                <br><br>
+
+                <h2>
+                    What do you use to see things far away in the sky?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    1. Microscope
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    2. Binoculars
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    3. Telescope
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    4. Magnifying Glass
+                </button>
+                <br><br>
+
+                <h2>
+                    Which animal breathes through its skin?
+                </h2>
+                <button onclick="checkAsnwer(this,false)">
+                    1. Fish
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    2. Frog
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    3. Elephant
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    4. Bird
+                </button>
+                <br><br>
+
+                <h2>
+                    What is the boiling point of water?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    1. 50°C
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    2. 100°C
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    3. 75°C
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    4. 25°C
+                </button>
+                <br><br>
+
+                <h2> 
+                    What do bees collect from flowers?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    1. Leaves
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    2. Stems
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    3. Nectar
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    4. Bark
+                </button>
+                <br><br>
+
+                <h2> 
+                    Which of these is NOT a primary color?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    1. Red
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    2. Green
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    3. Blue
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    4. Yellow
+                </button>
+                <br><br>
+
+                <h2> 
+                    How many legs does a spider have?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    1. 6
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    2. 8
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    3. 10
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    4. 4
+                </button>
+                <br><br>
+
+                <h2>
+                    What is the largest mammal in the world?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    1. Elephant
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    2. Giraffe
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    3. Blue Whale
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    4. Rhinoceros
+                </button>
+                <br><br>
+
+                <h2> 
+                    Which of these is a gas giant planet in our solar system?
+                </h2>
+                <button onclick="checkAnswer(this,false)">
+                    1. Mars
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    2. Venus
+                </button>
+                <button onclick="checkAnswer(this,true)">
+                    3. Jupiter
+                </button>
+                <button onclick="checkAnswer(this,false)">
+                    4. Mercury
+                </button>
+                <br><br>
+                <div class="score" id="score"></div>
+            </div>
+        </div>
+        <script>
+            let score = 0;
+
+        let totalQuestions = 10;
+
+ 
+
+        function checkAnswer(button, isCorrect) {
+
+            if (isCorrect) {
+
+                button.classList.add('correct');
+
+                score++;
+
+            } else {
+
+                button.classList.add('wrong');
+
+            }
+
+ 
+
+            // Disable all buttons for the current question
+
+            let buttons = button.parentElement.querySelectorAll('button');
+
+            
+
+ 
+
+            updateScore();
+
+        }
+
+ 
+
+        function updateScore() {
+
+            document.getElementById('score').innerText = `Score: ${score}/${totalQuestions}`;
+
+        }
+        </script>
+    </body>
+</html>
